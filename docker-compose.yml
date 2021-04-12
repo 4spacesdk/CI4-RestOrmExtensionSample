@@ -1,0 +1,62 @@
+version: "3.7"
+
+services:
+
+  # PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+
+    container_name: ci4restormsample-app
+    restart: unless-stopped
+    tty: true
+
+    working_dir: /var/www/html
+
+    ports:
+      - "${DOCKER_WEB_PORT}:80"
+
+    environment:
+      - ENVIRONMENT=development
+      - BASE_URL=http://localhost:${DOCKER_WEB_PORT}
+      - DB_HOST=db
+      - DB_NAME=app
+      - DB_USER=root
+      - DB_PASS=root
+
+    volumes:
+      - .:/var/www/html:delegated
+      - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini:delegated
+
+    networks:
+      - ci4restormsample-network
+
+  # MySQL Service
+  db:
+    image: mariadb
+    container_name: ci4restormsample-db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "${DOCKER_DATABASE_PORT}:3306"
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf:delegated
+      - ./docker/mysql/entrypoint-initdb.d:/docker-entrypoint-initdb.d/:delegated
+
+    networks:
+      - ci4restormsample-network
+
+# Docker Networks
+networks:
+  ci4restormsample-network:
+    driver: bridge
+
+# Volumes
+volumes:
+  dbdata:

@@ -1,0 +1,16 @@
+{
+  "name": "4spacesdk/ci4-restormextensionsample",
+  "description": "",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Martin-4Spaces",
+      "email": "martin@4spaces.dk"
+    }
+  ],
+  "require": {
+    "codeigniter4/framework": "4.1.1",
+    "4spacesdk/ci4ormextension": "1.0.0-beta.32",
+    "4spacesdk/ci4restextension": "1.0.0-beta.34"
+  }
+}
