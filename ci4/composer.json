@@ -12,5 +12,10 @@
     "codeigniter4/framework": "4.1.1",
     "4spacesdk/ci4ormextension": "1.0.0-beta.32",
     "4spacesdk/ci4restextension": "1.0.0-beta.34"
+  },
+  "autoload": {
+    "psr-4": {
+      "Module\\": "Module"
+    }
   }
 }

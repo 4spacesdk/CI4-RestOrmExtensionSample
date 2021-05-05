@@ -448,8 +448,8 @@ class App extends BaseConfig
 
 	public function __construct() {
 	    parent::__construct();
-	    if (getenv('BASE_URL')) {
-	        $this->baseURL = getenv('BASE_URL');
+        if (getenv('BASE_URL')) {
+            $this->baseURL = getenv('BASE_URL');
         }
     }
 }
