@@ -25,4 +25,11 @@ class Products extends BaseController {
         Services::response()->send();
     }
 
+    public function all() {
+        $items = (new ProductModel())->restGet(0, $this->queryParser);
+
+        Services::response()->setJSON($items->allToArrayWithFields($this->queryParser->getFieldsArray()));
+        Services::response()->send();
+    }
+
 }

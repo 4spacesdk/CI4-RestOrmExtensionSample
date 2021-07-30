@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4412debca9221368cf616900e0e15e7d",
+    "content-hash": "bf9ef2885b432bece99e201c0c5c4ccd",
     "packages": [
         {
             "name": "4spacesdk/ci4debugtool",
@@ -48,22 +48,23 @@
         },
         {
             "name": "4spacesdk/ci4ormextension",
-            "version": "1.0.0-beta.32",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/4spacesdk/CI4OrmExtension.git",
-                "reference": "8064296b1cde2f9a5881538694bc39a21ee8370d"
+                "reference": "d90a83e1b43d254c5f3ff0f795fa810f163b58c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/4spacesdk/CI4OrmExtension/zipball/8064296b1cde2f9a5881538694bc39a21ee8370d",
-                "reference": "8064296b1cde2f9a5881538694bc39a21ee8370d",
+                "url": "https://api.github.com/repos/4spacesdk/CI4OrmExtension/zipball/d90a83e1b43d254c5f3ff0f795fa810f163b58c1",
+                "reference": "d90a83e1b43d254c5f3ff0f795fa810f163b58c1",
                 "shasum": ""
             },
             "require": {
                 "4spacesdk/ci4debugtool": ">=1.0.0",
                 "php": ">=7.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -83,22 +84,22 @@
             "description": "ORM Extension for CodeIgniter 4",
             "support": {
                 "issues": "https://github.com/4spacesdk/CI4OrmExtension/issues",
-                "source": "https://github.com/4spacesdk/CI4OrmExtension/tree/1.0.0-beta.32"
+                "source": "https://github.com/4spacesdk/CI4OrmExtension/tree/1.0.0"
             },
-            "time": "2021-03-27T11:02:30+00:00"
+            "time": "2021-07-30T12:28:16+00:00"
         },
         {
             "name": "4spacesdk/ci4restextension",
-            "version": "1.0.0-beta.34",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/4spacesdk/CI4RESTExtension.git",
-                "reference": "6e66160e288ab6d3c5a8212b853631c376c4a7f4"
+                "reference": "43bc61a5593c20aca51df72e356483de463845e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/4spacesdk/CI4RESTExtension/zipball/6e66160e288ab6d3c5a8212b853631c376c4a7f4",
-                "reference": "6e66160e288ab6d3c5a8212b853631c376c4a7f4",
+                "url": "https://api.github.com/repos/4spacesdk/CI4RESTExtension/zipball/43bc61a5593c20aca51df72e356483de463845e1",
+                "reference": "43bc61a5593c20aca51df72e356483de463845e1",
                 "shasum": ""
             },
             "require": {
@@ -108,6 +109,7 @@
             "suggest": {
                 "4spacesdk/ci4restextension-zmq": "For pushing changes to ZMQ"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -127,9 +129,9 @@
             "description": "REST Extension for CodeIgniter 4",
             "support": {
                 "issues": "https://github.com/4spacesdk/CI4RESTExtension/issues",
-                "source": "https://github.com/4spacesdk/CI4RESTExtension/tree/1.0.0-beta.34"
+                "source": "https://github.com/4spacesdk/CI4RESTExtension/tree/1.0.0"
             },
-            "time": "2021-03-06T05:42:12+00:00"
+            "time": "2021-07-30T12:43:05+00:00"
         },
         {
             "name": "codeigniter4/framework",
@@ -264,16 +266,16 @@
         },
         {
             "name": "laminas/laminas-escaper",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "5e04bc5ae5990b17159d79d331055e2c645e5cc5"
+                "reference": "2d6dce99668b413610e9544183fa10392437f542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/5e04bc5ae5990b17159d79d331055e2c645e5cc5",
-                "reference": "5e04bc5ae5990b17159d79d331055e2c645e5cc5",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/2d6dce99668b413610e9544183fa10392437f542",
+                "reference": "2d6dce99668b413610e9544183fa10392437f542",
                 "shasum": ""
             },
             "require": {
@@ -284,7 +286,7 @@
                 "zendframework/zend-escaper": "^2.6.1"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-coding-standard": "~2.3.0",
                 "phpunit/phpunit": "^9.3",
                 "psalm/plugin-phpunit": "^0.12.2",
                 "vimeo/psalm": "^3.16"
@@ -323,20 +325,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-11-17T21:26:43+00:00"
+            "time": "2021-06-26T14:26:08+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32"
+                "reference": "13af2502d9bb6f7d33be2de4b51fb68c6cdb476e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6cccbddfcfc742eb02158d6137ca5687d92cee32",
-                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/13af2502d9bb6f7d33be2de4b51fb68c6cdb476e",
+                "reference": "13af2502d9bb6f7d33be2de4b51fb68c6cdb476e",
                 "shasum": ""
             },
             "require": {
@@ -385,7 +387,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-02-25T21:54:58+00:00"
+            "time": "2021-06-24T12:49:22+00:00"
         },
         {
             "name": "psr/log",
@@ -442,8 +444,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "4spacesdk/ci4ormextension": 10,
-        "4spacesdk/ci4restextension": 10
+        "4spacesdk/ci4ormextension": 20,
+        "4spacesdk/ci4restextension": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
