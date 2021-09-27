@@ -53,5 +53,5 @@ Events::on('pre_system', function () {
 	}
 });
 
-Events::on('pre_system', [\OrmExtension\Hooks\PreController::class, 'execute']);
 Events::on('pre_system', [\RestExtension\Hooks::class, 'preSystem']);
+Events::on('pre_system', [\OrmExtension\Hooks\PreController::class, 'execute']);

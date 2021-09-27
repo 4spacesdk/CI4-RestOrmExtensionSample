@@ -7,11 +7,11 @@
 
 	<title><?= esc($title) ?></title>
 	<style type="text/css">
-		<?= preg_replace('#[\r\n\t ]+#', ' ', file_get_contents(__DIR__ . DIRECTORY_SEPARATOR)) ?>
+        <?= preg_replace('#[\r\n\t ]+#', ' ', file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . 'debug.css')) ?>
 	</style>
 
 	<script type="text/javascript">
-		<?= file_get_contents(__DIR__ . DIRECTORY_SEPARATOR) ?>
+        <?= file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . 'debug.js') ?>
 	</script>
 </head>
 <body onload="init()">
@@ -43,6 +43,7 @@
 
 		<ul class="tabs" id="tabs">
 			<li><a href="#backtrace">Backtrace</a></li>
+            <li><a href="#data">Data</a></li>
 				<li><a href="#server">Server</a></li>
 				<li><a href="#request">Request</a></li>
 				<li><a href="#response">Response</a></li>
@@ -125,6 +126,11 @@
 				</ol>
 
 			</div>
+
+            <!-- Data -->
+            <div class="content" id="data">
+                <pre><code><?=json_encode(\DebugTool\Data::getStore(), JSON_PRETTY_PRINT)?></code></pre>
+            </div>
 
 			<!-- Server -->
 			<div class="content" id="server">

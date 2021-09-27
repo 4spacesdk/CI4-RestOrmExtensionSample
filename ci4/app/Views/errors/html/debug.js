@@ -50,6 +50,10 @@ function init()
 		}
 		i ++;
 	}
+    // Show last selected tab
+    if(window.localStorage.getItem('lastTab')) {
+        tabLinks[window.localStorage.getItem('lastTab')].click();
+    }
 }
 
 //--------------------------------------------------------------------
@@ -74,7 +78,9 @@ function showTab()
 		}
 	}
 
-	// Stop the browser following the link
+    window.localStorage.setItem("lastTab", selectedId);
+
+    // Stop the browser following the link
 	return false;
 }
 

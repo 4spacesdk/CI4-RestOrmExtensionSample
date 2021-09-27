@@ -6,6 +6,8 @@ use RestExtension\AuthorizeResponse;
 
 class RestExtension extends BaseConfig {
 
+    public $databaseGroupName       = null;
+
     /*
      * Enabling this feature requires you to
      * - Store routes in the database
