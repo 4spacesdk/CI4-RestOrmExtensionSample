@@ -52,12 +52,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/4spacesdk/CI4OrmExtension.git",
-                "reference": "8cb51cbd3c2a56e1c982745e4011597b3c24e5af"
+                "reference": "190857475663e9744aca61a6f3664baa70cb0792"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/4spacesdk/CI4OrmExtension/zipball/8cb51cbd3c2a56e1c982745e4011597b3c24e5af",
-                "reference": "8cb51cbd3c2a56e1c982745e4011597b3c24e5af",
+                "url": "https://api.github.com/repos/4spacesdk/CI4OrmExtension/zipball/190857475663e9744aca61a6f3664baa70cb0792",
+                "reference": "190857475663e9744aca61a6f3664baa70cb0792",
                 "shasum": ""
             },
             "require": {
@@ -86,7 +86,7 @@
                 "issues": "https://github.com/4spacesdk/CI4OrmExtension/issues",
                 "source": "https://github.com/4spacesdk/CI4OrmExtension/tree/master"
             },
-            "time": "2021-09-20T18:36:19+00:00"
+            "time": "2022-01-20T08:16:09+00:00"
         },
         {
             "name": "4spacesdk/ci4restextension",
@@ -94,12 +94,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/4spacesdk/CI4RESTExtension.git",
-                "reference": "43bc61a5593c20aca51df72e356483de463845e1"
+                "reference": "93f9325211a930c26ae811502a4cbde2a2eccab7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/4spacesdk/CI4RESTExtension/zipball/43bc61a5593c20aca51df72e356483de463845e1",
-                "reference": "43bc61a5593c20aca51df72e356483de463845e1",
+                "url": "https://api.github.com/repos/4spacesdk/CI4RESTExtension/zipball/93f9325211a930c26ae811502a4cbde2a2eccab7",
+                "reference": "93f9325211a930c26ae811502a4cbde2a2eccab7",
                 "shasum": ""
             },
             "require": {
@@ -129,9 +129,9 @@
             "description": "REST Extension for CodeIgniter 4",
             "support": {
                 "issues": "https://github.com/4spacesdk/CI4RESTExtension/issues",
-                "source": "https://github.com/4spacesdk/CI4RESTExtension/tree/1.0.0"
+                "source": "https://github.com/4spacesdk/CI4RESTExtension/tree/master"
             },
-            "time": "2021-07-30T12:43:05+00:00"
+            "time": "2021-12-07T12:05:51+00:00"
         },
         {
             "name": "codeigniter4/framework",
@@ -388,5 +388,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.2.0"
 }
