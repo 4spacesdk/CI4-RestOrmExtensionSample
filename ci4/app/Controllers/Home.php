@@ -9,10 +9,11 @@ class Home extends BaseController {
         return view('welcome_message');
     }
 
-    public function issue21() {
+    public function issue22() {
         $navigation = new Navigation();
         $navigation->find(1);
-        $navigation->secs->find();
+        $navigation->conts->find();
+        Data::lastQuery();
 
         Data::set('navigation', $navigation->toArray());
 

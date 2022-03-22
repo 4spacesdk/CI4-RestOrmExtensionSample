@@ -7,12 +7,12 @@ class NavigationModel extends Model {
     protected $primaryKey = 'navigation_id';
 
     public $hasMany = [
-        'sec' => [
-            'class' => SectionModel::class,
-            'joinTable' => 'ptv_navigation_sections',
+        'cont' => [
+            'class' => ContentModel::class,
+            'joinTable' => 'ptv_navigation_contents',
             'otherField' => 'nav',
             'joinSelfAs' => 'navigation_fk',
-            'joinOtherAs' => 'section_fk'
+            'joinOtherAs' => 'content_fk'
         ],
     ];
     public function getTableName() {

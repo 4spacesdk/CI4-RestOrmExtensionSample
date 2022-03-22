@@ -2,16 +2,16 @@
 
 use OrmExtension\Extensions\Model;
 
-class SectionModel extends Model {
-    protected $table = 'ptv_sections';
-    protected $primaryKey = 'section_id';
+class ContentModel extends Model {
+    protected $table = 'ptv_contents';
+    protected $primaryKey = 'content_id';
 
     public $hasMany = [
         'nav' => [
             'class' => NavigationModel::class,
-            'joinTable' => 'ptv_navigation_sections',
-            'otherField' => 'sec',
-            'joinSelfAs' => 'section_fk',
+            'joinTable' => 'ptv_navigation_contents',
+            'otherField' => 'cont',
+            'joinSelfAs' => 'content_fk',
             'joinOtherAs' => 'navigation_fk'
         ],
     ];

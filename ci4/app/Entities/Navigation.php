@@ -2,7 +2,7 @@
 use OrmExtension\Extensions\Entity;
 
 /**
- * @property Section $secs
+ * @property Content $conts
  */
 class Navigation extends Entity {
 

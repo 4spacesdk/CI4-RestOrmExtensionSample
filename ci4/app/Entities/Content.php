@@ -4,6 +4,6 @@ use OrmExtension\Extensions\Entity;
 /**
  * @property Navigation $navs
  */
-class Section extends Entity {
+class Content extends Entity {
 
 }
