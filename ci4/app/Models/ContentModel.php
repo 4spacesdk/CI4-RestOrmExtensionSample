@@ -22,6 +22,13 @@ class ContentModel extends Model {
             'joinSelfAs' => 'content_fk',
             'joinOtherAs' => 'category_fk'
         ],
+        'att' => [
+            'class' => AttachModel::class,
+            'joinTable' => 'ptv_attaches_content',
+            'otherField' => 'cont',
+            'joinSelfAs' => 'content_fk',
+            'joinOtherAs' => 'attach_fk'
+        ],
     ];
 
     public function getTableName() {

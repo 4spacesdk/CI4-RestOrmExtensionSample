@@ -20,4 +20,19 @@ class Home extends BaseController {
         $this->response->setJSON(Data::getStore())->send();
     }
 
+    public function issue23() {
+        $prev = new Content();
+        $prev->find(1);
+        $prev->atts->find();
+
+        $new = new Content();
+        $new->name = $prev->name;
+        $new->save();
+        $new->save($prev->atts, 'att');
+
+        Data::set('content', $new->toArray());
+
+        $this->response->setJSON(Data::getStore())->send();
+    }
+
 }

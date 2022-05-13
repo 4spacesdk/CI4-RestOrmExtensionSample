@@ -52,12 +52,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/4spacesdk/CI4OrmExtension.git",
-                "reference": "03c2e40da27317153a96ade51fb90542fb6ebefe"
+                "reference": "1f62ba84773c97d76060e330aa6ec40b019144dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/4spacesdk/CI4OrmExtension/zipball/03c2e40da27317153a96ade51fb90542fb6ebefe",
-                "reference": "03c2e40da27317153a96ade51fb90542fb6ebefe",
+                "url": "https://api.github.com/repos/4spacesdk/CI4OrmExtension/zipball/1f62ba84773c97d76060e330aa6ec40b019144dc",
+                "reference": "1f62ba84773c97d76060e330aa6ec40b019144dc",
                 "shasum": ""
             },
             "require": {
@@ -84,9 +84,9 @@
             "description": "ORM Extension for CodeIgniter 4",
             "support": {
                 "issues": "https://github.com/4spacesdk/CI4OrmExtension/issues",
-                "source": "https://github.com/4spacesdk/CI4OrmExtension/tree/1.0.4"
+                "source": "https://github.com/4spacesdk/CI4OrmExtension/tree/master"
             },
-            "time": "2022-03-22T10:56:18+00:00"
+            "time": "2022-05-13T09:19:15+00:00"
         },
         {
             "name": "4spacesdk/ci4restextension",
