@@ -31,6 +31,25 @@ VALUES
 	(1),
 	(2);
 ");
+
+        Table::init('categories')
+            ->create()
+            ->column('name', ColumnTypes::VARCHAR_63);
+        Database::connect()->query("INSERT INTO `categories` (`id`, `name`)
+VALUES
+	(1, 'Category 1'),
+	(2, 'Category 2');
+");
+
+        Table::init('categories_contents')
+            ->create()
+            ->column('content_fk', ColumnTypes::INT)
+            ->column('category_fk', ColumnTypes::INT);
+        Database::connect()->query("INSERT INTO `categories_contents` (`content_fk`, `category_fk`)
+VALUES
+	(1, 1),
+	(1, 2);
+");
     }
 
     public function down() {

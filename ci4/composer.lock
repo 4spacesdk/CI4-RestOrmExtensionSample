@@ -84,7 +84,7 @@
             "description": "ORM Extension for CodeIgniter 4",
             "support": {
                 "issues": "https://github.com/4spacesdk/CI4OrmExtension/issues",
-                "source": "https://github.com/4spacesdk/CI4OrmExtension/tree/master"
+                "source": "https://github.com/4spacesdk/CI4OrmExtension/tree/1.0.4"
             },
             "time": "2022-03-22T10:56:18+00:00"
         },

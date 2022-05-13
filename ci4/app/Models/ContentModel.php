@@ -3,6 +3,7 @@
 use OrmExtension\Extensions\Model;
 
 class ContentModel extends Model {
+
     protected $table = 'ptv_contents';
     protected $primaryKey = 'content_id';
 
@@ -13,6 +14,13 @@ class ContentModel extends Model {
             'otherField' => 'cont',
             'joinSelfAs' => 'content_fk',
             'joinOtherAs' => 'navigation_fk'
+        ],
+        'categ' => [
+            'class' => CategoryModel::class,
+            'joinTable' => 'categories_contents',
+            'otherField' => 'content',
+            'joinSelfAs' => 'content_fk',
+            'joinOtherAs' => 'category_fk'
         ],
     ];
 

@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 
-use App\Entities\Navigation;
+use App\Entities\Content;
 use DebugTool\Data;
 
 class Home extends BaseController {
@@ -10,12 +10,12 @@ class Home extends BaseController {
     }
 
     public function issue22() {
-        $navigation = new Navigation();
-        $navigation->find(1);
-        $navigation->conts->find();
+        $content = new Content();
+        $content->find(1);
+        $content->categs->find();
         Data::lastQuery();
 
-        Data::set('navigation', $navigation->toArray());
+        Data::set('content', $content->toArray());
 
         $this->response->setJSON(Data::getStore())->send();
     }
