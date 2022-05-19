@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
 use App\Entities\Content;
+use App\Models\ContentModel;
 use DebugTool\Data;
 
 class Home extends BaseController {
@@ -31,6 +32,15 @@ class Home extends BaseController {
         $new->save($prev->atts, 'att');
 
         Data::set('content', $new->toArray());
+
+        $this->response->setJSON(Data::getStore())->send();
+    }
+
+    public function issue24() {
+        (new ContentModel())
+            ->where('content_id', 1)
+            ->find();
+        Data::lastQuery();
 
         $this->response->setJSON(Data::getStore())->send();
     }
