@@ -3,3 +3,4 @@
 ci4/vendor
 ci4/writable/logs
 ci4/writable/cache
+ci4/writable/debugbar
