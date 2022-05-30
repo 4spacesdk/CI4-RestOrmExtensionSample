@@ -16,8 +16,8 @@ class C_UserModel extends Model {
     public $hasMany = [
         C_RoleModel::class => [
             'joinTable' => 'c__roles_users',
-            'joinSelfAs' => 'role_fk',
-            'joinOtherAs' => 'user_fk',
+            'joinSelfAs' => 'user_fk',
+            'joinOtherAs' => 'role_fk',
         ],
     ];
 
