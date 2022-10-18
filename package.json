@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "ssh": "docker exec -it ci4restormsample-app bash"
+  }
+}

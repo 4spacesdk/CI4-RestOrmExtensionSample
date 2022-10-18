@@ -8,6 +8,7 @@ use RestExtension\Core\Entity;
  * @property string $name
  * @property int $color_id
  * @property Color $color
+ * @property Color $color1
  *
  * Many
  * @property Role $roles

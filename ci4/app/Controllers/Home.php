@@ -158,4 +158,19 @@ class Home extends BaseController {
         Data::debug($user->c__roles->allToArray());
     }
 
+    public function testFindOnEmptyRelation() {
+        Data::debug('');
+        Data::debug('testFindOnEmptyRelation');
+
+        $user = new User();
+        $user->name = 'testFindOnEmptyRelation';
+        $user->save();
+        $user->color1->find();
+        Data::lastQuery();
+
+        Data::debug($user->toArray());
+        Services::response()->setJSON(Data::getStore());
+        Services::response()->send();
+    }
+
 }
